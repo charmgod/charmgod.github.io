@@ -487,29 +487,29 @@
                 <p>title: Java日记Day01<br>date: 2022-4-03 16:00:45<br>tag: Java学习日记</p>
 <h2 id="我亦无他-唯熟手而"><a href="#我亦无他-唯熟手而" class="headerlink" title="我亦无他,唯熟手而"></a>我亦无他,唯熟手而</h2><h2 id="Java基础-JavaSE"><a href="#Java基础-JavaSE" class="headerlink" title="Java基础(JavaSE)"></a>Java基础(JavaSE)</h2><h3 id="JDK的安装与配置"><a href="#JDK的安装与配置" class="headerlink" title="JDK的安装与配置"></a>JDK的安装与配置</h3><h4 id="环境变量与系统变量的区别"><a href="#环境变量与系统变量的区别" class="headerlink" title="环境变量与系统变量的区别:"></a>环境变量与系统变量的区别:</h4><p>环境变量在当前用户下使用,而系统变量配置后在多个用户上都可以使用</p>
 <h4 id="为什么要配置环境变量"><a href="#为什么要配置环境变量" class="headerlink" title="为什么要配置环境变量:"></a>为什么要配置环境变量:</h4><p>最主要的就是为了在ods的任意目录下使用javac和java命令</p>
-<img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403091749481.png" alt="image-20220403091749481" style="zoom: 50%;">
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403091749481.png" alt="image-20220403091749481" style="zoom: 50%;">
 
 <p>在dos命令行中输入javac会提示错误,是因为当前执行的程序在当前目录下并不存在,win10系统会在系统中已有的一个名为path的环境变量指定的目录中去查找,如果仍未找到,就会报错,如果直接进入到jdk安装目录下的bin目录,再执行javac,就会看到javac的提示信息,所以要将jdk配置到环境变量中,便可以在任意一个文件夹下成功执行javac命令</p>
 <h4 id="JAVA的编码问题"><a href="#JAVA的编码问题" class="headerlink" title="JAVA的编码问题:"></a>JAVA的编码问题:</h4><p>由于命令行的编码格式是GBK,所以在使用sublime进行代码的编写时候要将格式转换为GBK的格式,不然的话使用其他格式就会出现中文乱码的现象</p>
-<img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403095909244.png" alt="image-20220403095909244" style="zoom: 67%;">
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403170753614.png" alt="image-20220403170753614" style="zoom: 67%;">
 
-<p><img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403095812225.png" alt="image-20220403095812225"></p>
-<h4 id="Java运行原理"><a href="#Java运行原理" class="headerlink" title="Java运行原理"></a>Java运行原理</h4><img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403101222240.png" alt="image-20220403101222240" style="zoom: 50%;">
+<p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403170824659.png" alt="image-20220403170824659"></p>
+<h4 id="Java运行原理"><a href="#Java运行原理" class="headerlink" title="Java运行原理"></a>Java运行原理</h4><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403170850318.png" alt="image-20220403170850318" style="zoom:50%;">
 
-<h3 id="Java运行机制"><a href="#Java运行机制" class="headerlink" title="Java运行机制"></a>Java运行机制</h3><h5 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h5><img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220402234159095.png" alt="image-20220402234159095" style="zoom: 50%;">
+<h3 id="Java运行机制"><a href="#Java运行机制" class="headerlink" title="Java运行机制"></a>Java运行机制</h3><h5 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h5><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403170920153.png" alt="image-20220403170920153" style="zoom: 50%;">
 
 <p>1.有了java源文件就可以通过编译器将其编译成JVM可以识别的字节码文件(.class)</p>
 <p>2.在该文件的目录下通过javac工具对Hello java文件进行编译</p>
 <p>3.如果没有错误则生成相对应的字节码文件,是一个可执行的java程序</p>
 <h5 id="什么是运行"><a href="#什么是运行" class="headerlink" title="什么是运行"></a>什么是运行</h5><p>1.有了可以运行的字节码文件后</p>
 <p>2.通过java.exe对字节码文件进行执行,本质其实就是:将.class文件装载到JVM机执行</p>
-<h4 id="Java开发细节"><a href="#Java开发细节" class="headerlink" title="Java开发细节"></a>Java开发细节</h4><p><img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403104918706.png" alt="image-20220403104918706"></p>
+<h4 id="Java开发细节"><a href="#Java开发细节" class="headerlink" title="Java开发细节"></a>Java开发细节</h4><p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403170945770.png" alt="image-20220403170945770"></p>
 <p>编译后,每一个类都会生成一个.class文件</p>
 <p>如果一个源文件包含一个public类,则文件名必需按该类名命名(必须一致)</p>
-<img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403103002189.png" alt="image-20220403103002189" style="zoom:67%;">
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171013010.png" alt="image-20220403171013010" style="zoom: 67%;">
 
 <p>一个源文件只能有一个public类</p>
-<h4 id="如何快速掌握一门新的技术"><a href="#如何快速掌握一门新的技术" class="headerlink" title="如何快速掌握一门新的技术"></a>如何快速掌握一门新的技术</h4><p><img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403105602212.png" alt="image-20220403105602212"></p>
+<h4 id="如何快速掌握一门新的技术"><a href="#如何快速掌握一门新的技术" class="headerlink" title="如何快速掌握一门新的技术"></a>如何快速掌握一门新的技术</h4><p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171035463.png" alt="image-20220403171035463"></p>
 <h4 id="Java常用-转义字符"><a href="#Java常用-转义字符" class="headerlink" title="Java常用 转义字符"></a>Java常用 转义字符</h4><p>在控制台，输入 tab 键，可以实现命令补全</p>
 <p>\t  ：一个制表位，实现对齐的功能</p>
 <p>\n  ：换行符</p>
@@ -520,8 +520,8 @@
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println("韩顺平教育\r 北京");</span><br></pre></td></tr></tbody></table></figure>
 
 <p>使用回车会在打印完韩顺平教育后将光标移到韩顺平教育的最开头,韩的位置上去然后继续打印北京,最后输出的结果是”北京平教育”</p>
-<h4 id="初学-java-易犯错误"><a href="#初学-java-易犯错误" class="headerlink" title="初学 java 易犯错误"></a>初学 java 易犯错误</h4><p><img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403134007392.png" alt="image-20220403134007392"></p>
-<p><img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403134015062.png" alt="image-20220403134015062"></p>
+<h4 id="初学-java-易犯错误"><a href="#初学-java-易犯错误" class="headerlink" title="初学 java 易犯错误"></a>初学 java 易犯错误</h4><p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171058118.png" alt="image-20220403171058118"></p>
+<p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171121177.png" alt="image-20220403171121177"></p>
 <h4 id="注释-comment"><a href="#注释-comment" class="headerlink" title="注释(comment)"></a>注释(comment)</h4><p>要具有良好的编程习惯,要写好的注释,将自己的思想通过注释先体现出来,再用代码进行实现(被注释的东西不会被JVM解释说明)</p>
 <ol>
 <li>单行注释  //</li>
@@ -531,7 +531,7 @@
 <h5 id="文档注释"><a href="#文档注释" class="headerlink" title="文档注释"></a>文档注释</h5><p>在使用文档注释的时候,注释的内容可以被javadoc所解析,生成一套以网页形式体现的该程序的说明文档,一般写在类(在后续的维护中很好用)</p>
 <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javadoc -d E:\\Codefield\\Sublime\\temp -author -version Changchar.java</span><br></pre></td></tr></tbody></table></figure>
 
-<p><img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403141047795.png" alt="image-20220403141047795"></p>
+<p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171145121.png" alt="image-20220403171145121"></p>
 <h4 id="javadoc-标签"><a href="#javadoc-标签" class="headerlink" title="javadoc 标签"></a>javadoc 标签</h4><p>在文档中有一些常用的javadoc标签</p>
 <table>
 <thead>
@@ -627,13 +627,13 @@
 <td><strong>@version  info</strong></td>
 </tr>
 </tbody></table>
-<h4 id="Java代码规范-新手常用"><a href="#Java代码规范-新手常用" class="headerlink" title="Java代码规范(新手常用)"></a>Java代码规范(新手常用)</h4><img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403142551315.png" alt="image-20220403142551315" style="zoom:67%;">
+<h4 id="Java代码规范-新手常用"><a href="#Java代码规范-新手常用" class="headerlink" title="Java代码规范(新手常用)"></a>Java代码规范(新手常用)</h4><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171225368.png" alt="image-20220403171225368" style="zoom:67%;">
 
-<h4 id="DOS命令原理-仅作为了解"><a href="#DOS命令原理-仅作为了解" class="headerlink" title="DOS命令原理(仅作为了解)"></a>DOS命令原理(仅作为了解)</h4><img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403150350854.png" alt="image-20220403150350854" style="zoom: 50%;">
+<h4 id="DOS命令原理-仅作为了解"><a href="#DOS命令原理-仅作为了解" class="headerlink" title="DOS命令原理(仅作为了解)"></a>DOS命令原理(仅作为了解)</h4><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171247507.png" alt="image-20220403171247507" style="zoom:50%;">
 
 <h5 id="相对路径与绝对路径"><a href="#相对路径与绝对路径" class="headerlink" title="相对路径与绝对路径"></a>相对路径与绝对路径</h5><p>相对路径:从当前目录开始定位,形成的一个路径</p>
 <p>绝对路径:从最顶级目录开始定位,形成的路径</p>
-<img src="C:\Users\zzy\AppData\Roaming\Typora\typora-user-images\image-20220403151249951.png" alt="image-20220403151249951" style="zoom: 50%;">
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171304224.png" alt="image-20220403171304224" style="zoom:50%;">
 
 <h5 id="常用的DOS命令-已经是够用了"><a href="#常用的DOS命令-已经是够用了" class="headerlink" title="常用的DOS命令(已经是够用了)"></a>常用的DOS命令(已经是够用了)</h5><ol>
 <li><p>查看当前目录是有什么内容 dir dir   dir d:\abc2\test200</p>
