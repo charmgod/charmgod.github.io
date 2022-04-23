@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java学习日记Day1-基本内容, Home |ZZY&#39;s blog">
+    <meta name="keywords" content="hexo, Home |ZZY&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Java学习日记Day1-基本内容 | Home |ZZY&#39;s blog</title>
+    <title>hexo | Home |ZZY&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,12 +316,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java学习日记Day1-基本内容</h1>
+                    <h1 class="description center-align post-title">hexo</h1>
                 </div>
             </div>
         </div>
@@ -437,8 +437,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Java%E6%97%A5%E8%AE%B0/">
-                                <span class="chip bg-color">Java日记</span>
+                            <a href="/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
                             </a>
                         
                     </div>
@@ -453,7 +453,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-03
+                    2022-04-24
                 </div>
                 
 
@@ -462,14 +462,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    103
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    1 分
                 </div>
                 
 
@@ -489,185 +489,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>我亦无他,唯熟手而</p>
-<h2 id="一-JDK的安装与配置"><a href="#一-JDK的安装与配置" class="headerlink" title="一)JDK的安装与配置"></a>一)JDK的安装与配置</h2><h3 id="1-环境变量与系统变量的区别"><a href="#1-环境变量与系统变量的区别" class="headerlink" title="1)环境变量与系统变量的区别:"></a>1)环境变量与系统变量的区别:</h3><p>环境变量在当前用户下使用,而系统变量配置后在多个用户上都可以使用</p>
-<h4 id="2-为什么要配置环境变量"><a href="#2-为什么要配置环境变量" class="headerlink" title="2)为什么要配置环境变量:"></a>2)为什么要配置环境变量:</h4><p>最主要的就是为了在ods的任意目录下使用javac和java命令</p>
-<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403091749481.png" alt="Dos01" style="zoom: 50%;">
-
-<p>在dos命令行中输入javac会提示错误,是因为当前执行的程序在当前目录下并不存在,win10系统会在系统中已有的一个名为path的环境变量指定的目录中去查找,如果仍未找到,就会报错,如果直接进入到jdk安装目录下的bin目录,再执行javac,就会看到javac的提示信息,所以要将jdk配置到环境变量中,便可以在任意一个文件夹下成功执行javac命令</p>
-<h3 id="3-JAVA的编码问题"><a href="#3-JAVA的编码问题" class="headerlink" title="3)JAVA的编码问题:"></a>3)JAVA的编码问题:</h3><p>由于命令行的编码格式是GBK,所以在使用sublime进行代码的编写时候要将格式转换为GBK的格式,不然的话使用其他格式就会出现中文乱码的现象</p>
-<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403170753614.png" alt="Dos02" style="zoom: 67%;">
-
-<p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403170824659.png" alt="Dos属性"></p>
-<h2 id="二-Java运行原理"><a href="#二-Java运行原理" class="headerlink" title="二)Java运行原理"></a>二)Java运行原理</h2><h3 id="1-Java运行原理"><a href="#1-Java运行原理" class="headerlink" title="1)Java运行原理"></a>1)Java运行原理</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403170850318.png" alt="java运行原理" style="zoom:50%;">
-
-<h3 id="2-运行流程"><a href="#2-运行流程" class="headerlink" title="2)运行流程"></a>2)运行流程</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403170920153.png" alt="Java执行流程分析" style="zoom: 50%;">
-
-<p>1.有了java源文件就可以通过编译器将其编译成JVM可以识别的字节码文件(.class)</p>
-<p>2.在该文件的目录下通过javac工具对Hello java文件进行编译</p>
-<p>3.如果没有错误则生成相对应的字节码文件,是一个可执行的java程序</p>
-<h3 id="3-什么是运行"><a href="#3-什么是运行" class="headerlink" title="3)什么是运行"></a>3)什么是运行</h3><p>1.有了可以运行的字节码文件后</p>
-<p>2.通过java.exe对字节码文件进行执行,本质其实就是:将.class文件装载到JVM机执行</p>
-<h2 id="三-Java开发细节"><a href="#三-Java开发细节" class="headerlink" title="三)Java开发细节"></a>三)Java开发细节</h2><p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403170945770.png" alt="Java开发细节"></p>
-<p>编译后,每一个类都会生成一个.class文件</p>
-<p>如果一个源文件包含一个public类,则文件名必需按该类名命名(必须一致)</p>
-<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171013010.png" alt="Dos03" style="zoom: 67%;">
-
-<p>一个源文件只能有一个public类</p>
-<h2 id="四-如何快速掌握一门新的技术"><a href="#四-如何快速掌握一门新的技术" class="headerlink" title="四)如何快速掌握一门新的技术"></a>四)如何快速掌握一门新的技术</h2><p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171035463.png" alt="如何快速掌握一门新的技术"></p>
-<h2 id="五-Java常用-转义字符"><a href="#五-Java常用-转义字符" class="headerlink" title="五)Java常用 转义字符"></a>五)Java常用 转义字符</h2><p>在控制台，输入 tab 键，可以实现命令补全</p>
-<p>\t  ：一个制表位，实现对齐的功能</p>
-<p>\n  ：换行符</p>
-<p>\  ：一个\    (也就是一个转义字符)</p>
-<p>"  :一个”</p>
-<p>'  ：一个’</p>
-<p>\r  :一个回车 System.out.println(“韩顺平教育\r 北京”);</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println("韩顺平教育\r 北京");</span><br></pre></td></tr></tbody></table></figure>
-
-<p>使用回车会在打印完韩顺平教育后将光标移到韩顺平教育的最开头,韩的位置上去然后继续打印北京,最后输出的结果是”北京平教育”</p>
-<h2 id="六-初学-java-易犯错误"><a href="#六-初学-java-易犯错误" class="headerlink" title="六)初学 java 易犯错误"></a>六)初学 java 易犯错误</h2><p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171058118.png" alt="初学者易犯错误"></p>
-<p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171121177.png" alt="初学者易犯错误"></p>
-<h2 id="七-注释-comment"><a href="#七-注释-comment" class="headerlink" title="七)注释(comment)"></a>七)注释(comment)</h2><p>要具有良好的编程习惯,要写好的注释,将自己的思想通过注释先体现出来,再用代码进行实现(被注释的东西不会被JVM解释说明)</p>
-<ol>
-<li>单行注释  //</li>
-<li>多行注释  /* */               多行注释中不能继续嵌套多行注释</li>
-<li>文档注释  /** */</li>
-</ol>
-<h3 id="1-文档注释"><a href="#1-文档注释" class="headerlink" title="1)文档注释"></a>1)文档注释</h3><p>在使用文档注释的时候,注释的内容可以被javadoc所解析,生成一套以网页形式体现的该程序的说明文档,一般写在类(在后续的维护中很好用)</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javadoc -d E:\\Codefield\\Sublime\\temp -author -version Changchar.java</span><br></pre></td></tr></tbody></table></figure>
-
-<p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171145121.png" alt="Dos04"></p>
-<h3 id="2-javadoc-标签"><a href="#2-javadoc-标签" class="headerlink" title="2)javadoc 标签"></a>2)javadoc 标签</h3><p>在文档中有一些常用的javadoc标签</p>
-<table>
-<thead>
-<tr>
-<th><strong>标签</strong></th>
-<th><strong>描述</strong></th>
-<th><strong>示例</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>@author</strong></td>
-<td><strong>标识一个类的作者</strong></td>
-<td><strong>@author  description</strong></td>
-</tr>
-<tr>
-<td><strong>@deprecated</strong></td>
-<td><strong>指名一个过期的类或成员</strong></td>
-<td><strong>@deprecated  description</strong></td>
-</tr>
-<tr>
-<td><strong>{@docRoot}</strong></td>
-<td><strong>指明当前文档根目录的路径</strong></td>
-<td><strong>Directory  Path</strong></td>
-</tr>
-<tr>
-<td><strong>@exception</strong></td>
-<td><strong>标志一个类抛出的异常</strong></td>
-<td><strong>@exception  exception-name explanation</strong></td>
-</tr>
-<tr>
-<td><strong>{@inheritDoc}</strong></td>
-<td><strong>从直接父类继承的注释</strong></td>
-<td><strong>Inherits a  comment from the immediate surperclass.</strong></td>
-</tr>
-<tr>
-<td><strong>{@link}</strong></td>
-<td><strong>插入一个到另一个主题的链接</strong></td>
-<td><strong>{@link  name text}</strong></td>
-</tr>
-<tr>
-<td><strong>{@linkplain}</strong></td>
-<td><strong>插入一个到另一个主题的链接，但是该链接显示纯文本字体</strong></td>
-<td><strong>Inserts an  in-line link to another topic.</strong></td>
-</tr>
-<tr>
-<td><strong>@param</strong></td>
-<td><strong>说明一个方法的参数</strong></td>
-<td><strong>@param  parameter-name explanation</strong></td>
-</tr>
-<tr>
-<td><strong>@return</strong></td>
-<td><strong>说明返回值类型</strong></td>
-<td><strong>@return  explanation</strong></td>
-</tr>
-<tr>
-<td><strong>@see</strong></td>
-<td><strong>指定一个到另一个主题的链接</strong></td>
-<td><strong>@see  anchor</strong></td>
-</tr>
-<tr>
-<td><strong>@serial</strong></td>
-<td><strong>说明一个序列化属性</strong></td>
-<td><strong>@serial  description</strong></td>
-</tr>
-<tr>
-<td><strong>@serialData</strong></td>
-<td><strong>说明通过writeObject( ) 和 writeExternal( )方法写的数据</strong></td>
-<td><strong>@serialData  description</strong></td>
-</tr>
-<tr>
-<td><strong>@serialField</strong></td>
-<td><strong>说明一个ObjectStreamField组件</strong></td>
-<td><strong>@serialField  name type description</strong></td>
-</tr>
-<tr>
-<td><strong>@since</strong></td>
-<td><strong>标记当引入一个特定的变化时</strong></td>
-<td><strong>@since  release</strong></td>
-</tr>
-<tr>
-<td><strong>@throws</strong></td>
-<td><strong>和  @exception标签一样.</strong></td>
-<td><strong>The  @throws tag has the same meaning as the @exception tag.</strong></td>
-</tr>
-<tr>
-<td><strong>{@value}</strong></td>
-<td><strong>显示常量的值，该常量必须是static属性。</strong></td>
-<td><strong>Displays  the value of a constant, which must be a static field.</strong></td>
-</tr>
-<tr>
-<td><strong>@version</strong></td>
-<td><strong>指定类的版本</strong></td>
-<td><strong>@version  info</strong></td>
-</tr>
-</tbody></table>
-<h2 id="八-Java代码规范-新手常用"><a href="#八-Java代码规范-新手常用" class="headerlink" title="八)Java代码规范(新手常用)"></a>八)Java代码规范(新手常用)</h2><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171225368.png" alt="Java代码规范" style="zoom:67%;">
-
-<h2 id="九-DOS命令原理-仅作为了解"><a href="#九-DOS命令原理-仅作为了解" class="headerlink" title="九)DOS命令原理(仅作为了解)"></a>九)DOS命令原理(仅作为了解)</h2><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171247507.png" alt="Dos原理" style="zoom:50%;">
-
-<h3 id="1-相对路径与绝对路径"><a href="#1-相对路径与绝对路径" class="headerlink" title="1)相对路径与绝对路径"></a>1)相对路径与绝对路径</h3><p>相对路径:从当前目录开始定位,形成的一个路径</p>
-<p>绝对路径:从最顶级目录开始定位,形成的路径</p>
-<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220403171304224.png" alt="相对路径与绝对路径" style="zoom:50%;">
-
-<h3 id="2-常用的DOS命令-已经是够用了"><a href="#2-常用的DOS命令-已经是够用了" class="headerlink" title="2)常用的DOS命令(已经是够用了)"></a>2)常用的DOS命令(已经是够用了)</h3><ol>
-<li><p>查看当前目录是有什么内容 dir dir   dir d:\abc2\test200</p>
-</li>
-<li><p>切换到其他盘下：盘符号 cd : change directory</p>
-</li>
-</ol>
-<p>​        切换到 c 盘  cd /D  c:</p>
-<ol start="3">
-<li><p>切换到当前盘的其他目录下 (使用相对路径和绝对路径演示), ..\表示上一级目录案例演示： cd d:\abc2\test200  cd ....\abc2\test200</p>
-<p>(最重要的是理解切换的方式:相对路径和绝对路径切换方式的不同)</p>
-</li>
-<li><p>切换到上一级： cd ..</p>
-</li>
-<li><p>切换到根目录：cd \</p>
-</li>
-</ol>
-<ol start="6">
-<li><p>查看指定的目录下所有的子级目录： tree</p>
-</li>
-<li><p>清屏： cls</p>
-</li>
-<li><p>退出 DOS ： exit</p>
-</li>
-</ol>
-<h2 id="十-JDK-JRE-JVM的关系"><a href="#十-JDK-JRE-JVM的关系" class="headerlink" title="十)JDK,JRE,JVM的关系"></a>十)JDK,JRE,JVM的关系</h2><ol>
-<li>JDK = JRE + java核心开发工具</li>
-<li>JRE = JDK + 核心类库</li>
-</ol>
+                <h1 id="hexo-Context-Dump-Ends解决办法"><a href="#hexo-Context-Dump-Ends解决办法" class="headerlink" title="(hexo)Context Dump Ends解决办法"></a>(hexo)Context Dump Ends解决办法</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述:"></a>问题描述:</h2><p>用git发布博客，在<code>hexo g</code>的时候报错</p>
+<p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220424000746545.png" alt="错误截图"></p>
+<p>后来发现是在文章里写了<code>{{}}</code> ，而hexo的文章渲染使用的是 <code>Nunjucks</code> ，因为在使用<code>mathjax</code>公式，造成了<code>{ {</code>重叠，而它会在生成文章时将那几个大括号识别成自己的语法，这样就会报错。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案:"></a>解决方案:</h2><p>用空格隔开就好</p>
 
                 
             </div>
@@ -694,7 +519,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://charmgod.github.io/2022/04/03/java-xue-xi-ri-ji-day1/">https://charmgod.github.io/2022/04/03/java-xue-xi-ri-ji-day1/</a>
+                    <a href="https://charmgod.github.io/2022/04/24/context-dump-ends-hexo/">https://charmgod.github.io/2022/04/24/context-dump-ends-hexo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -732,8 +557,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Java%E6%97%A5%E8%AE%B0/">
-                                    <span class="chip bg-color">Java日记</span>
+                                <a href="/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
                                 </a>
                             
                         </div>
@@ -925,17 +750,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/04/03/a-li-yun-zhi-typora-tu-chuang/">
+                <a href="/2022/04/24/context-dump-ends-hexo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="阿里云之Typora图床">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="hexo">
                         
-                        <span class="card-title">阿里云之Typora图床</span>
+                        <span class="card-title">hexo</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -945,9 +771,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -956,6 +782,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -974,13 +801,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/31/wo-de-di-yi-pian-bo-ke-wen-zhang/">
+                <a href="/2022/04/23/java-xue-xi-ri-ji-day05-shu-zu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="我的第一篇博客文章">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Java学习日记Day05数组">
                         
-                        <span class="card-title">我的第一篇博客文章</span>
+                        <span class="card-title">Java学习日记Day05数组</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -991,7 +818,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-23
                             </span>
                         <span class="publish-author">
                             
@@ -1004,8 +831,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                        <span class="chip bg-color">随笔</span>
+                    <a href="/tags/Java%E6%97%A5%E8%AE%B0/">
+                        <span class="chip bg-color">Java日记</span>
                     </a>
                     
                 </div>
