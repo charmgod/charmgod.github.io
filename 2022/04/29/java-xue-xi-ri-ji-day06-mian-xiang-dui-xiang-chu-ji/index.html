@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java学习日记Day2-数据类型, Home |ZZY&#39;s blog">
+    <meta name="keywords" content="Java学习日记Day06面向对象初级, Home |ZZY&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Java学习日记Day2-数据类型 | Home |ZZY&#39;s blog</title>
+    <title>Java学习日记Day06面向对象初级 | Home |ZZY&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,12 +316,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java学习日记Day2-数据类型</h1>
+                    <h1 class="description center-align post-title">Java学习日记Day06面向对象初级</h1>
                 </div>
             </div>
         </div>
@@ -453,7 +453,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-05
+                    2022-04-29
                 </div>
                 
 
@@ -462,14 +462,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.9k
+                    3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    10 分
                 </div>
                 
 
@@ -489,129 +489,233 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一-变量"><a href="#一-变量" class="headerlink" title="一)变量"></a>一)变量</h2><h3 id="1-变量是程序的基本组成单位"><a href="#1-变量是程序的基本组成单位" class="headerlink" title="1)变量是程序的基本组成单位"></a>1)变量是程序的基本组成单位</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405112836384.png" alt="变量是程序的基本组成单位" style="zoom: 80%;">
-
-<h3 id="2-变量的原理"><a href="#2-变量的原理" class="headerlink" title="2)变量的原理"></a>2)变量的原理</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405113321624.png" alt="变量的原理" style="zoom: 80%;">
-
-<h3 id="3-变-变化-量-值-的介绍"><a href="#3-变-变化-量-值-的介绍" class="headerlink" title="3)变(变化)量(值)的介绍"></a>3)变(变化)量(值)的介绍</h3><h4 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念:"></a>1.概念:</h4><p><strong>变量相当于内存中一个数据存储空间</strong>的表示，你可以把变量看做是一个房间的门牌号，通过<strong>门牌号</strong>我们可以找到房间，而通过变量名可以访问到变量(值)。</p>
-<h4 id="2-变量的使用步骤"><a href="#2-变量的使用步骤" class="headerlink" title="2.变量的使用步骤"></a>2.变量的使用步骤</h4><p>声明变量-赋值(或者直接一步到位)</p>
-<h3 id="4-变量的使用细节"><a href="#4-变量的使用细节" class="headerlink" title="4)变量的使用细节"></a>4)变量的使用细节</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405114855002.png" alt="变量的使用细节" style="zoom: 50%;">
-
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//变量必须先声明，后使用, 即有顺序</span></span><br><span class="line"><span class="keyword">int</span> a = <span class="number">50</span>;<span class="comment">//int System.out.println(a);//50</span></span><br><span class="line"><span class="comment">//该区域的数据/值可以在同一类型范围内不断变化</span></span><br><span class="line">a = <span class="string">"jack"</span>; <span class="comment">//× a = 88; //对</span></span><br><span class="line">System.out.println(a);<span class="comment">//88</span></span><br><span class="line"><span class="comment">//变量在同一个作用域内不能重名</span></span><br><span class="line"><span class="keyword">int</span> a = <span class="number">77</span>;<span class="comment">//错误</span></span><br></pre></td></tr></tbody></table></figure>
-
-<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405115325211.png" alt="只能在同一类型下变化" style="zoom:50%;">
-
-<h3 id="5-程序中-的使用"><a href="#5-程序中-的使用" class="headerlink" title="5)程序中+的使用"></a>5)程序中+的使用</h3><ol>
-<li>当左右两边都是数值型时,做加法运算</li>
-<li>当左右两边有一方是字符串,则作拼接运算</li>
-<li>运算顺序从左到右</li>
-</ol>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">"hello"</span> + <span class="number">100</span> + <span class="number">3</span>);<span class="comment">//会输出hello1003</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="6-数据类型"><a href="#6-数据类型" class="headerlink" title="6)数据类型"></a>6)数据类型</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405121105714.png" alt="java数据类型" style="zoom: 80%;">
-
-<p>String是属于类(Class)的</p>
-<ol>
-<li><h4 id="整数的类型"><a href="#整数的类型" class="headerlink" title="整数的类型"></a>整数的类型</h4></li>
-</ol>
-<p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405121553922.png" alt="整数的类型"></p>
-<p>注意一下类型转换可能带来的问题</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a1 = <span class="number">1L</span>  <span class="comment">//会报错是因为把长整型转换到Int会有损失</span></span><br></pre></td></tr></tbody></table></figure>
-
-<ol start="2">
-<li><h4 id="整型的使用细节"><a href="#整型的使用细节" class="headerlink" title="整型的使用细节"></a>整型的使用细节</h4></li>
-</ol>
-<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405131351243.png" alt="整型的使用细节" style="zoom: 50%;">
-
-<ol start="3">
-<li><h4 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h4><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405131813697.png" alt="浮点数的范围表示" style="zoom:67%;"></li>
-</ol>
-<p>额外说明: </p>
-<ul>
-<li>关于浮点数在机器中存放形式的简单说明,浮点数=符号位+指数位+尾数位</li>
-<li>尾数部分可能丢失，造成精度损失(小数都是近似值)。</li>
+                <h1 id="面向对象编程-基础"><a href="#面向对象编程-基础" class="headerlink" title="面向对象编程(基础)"></a>面向对象编程(基础)</h1><h2 id="一-类与对象"><a href="#一-类与对象" class="headerlink" title="(一) 类与对象"></a>(一) 类与对象</h2><h3 id="使用现有技术解决"><a href="#使用现有技术解决" class="headerlink" title="使用现有技术解决"></a>使用现有技术解决</h3><ul>
+<li>单独的定义变量解决</li>
+<li>使用数组解决</li>
 </ul>
-<ol start="4">
-<li><h4 id="浮点型使用细节"><a href="#浮点型使用细节" class="headerlink" title="浮点型使用细节"></a>浮点型使用细节</h4><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405143705686.png" alt="浮点型使用细节" style="zoom: 80%;">
-
-<p>互相转换正误判断:</p>
-</li>
-</ol>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Java 的浮点型常量(具体值)默认为 double 型，声明 float 型常量，须后加‘f’或‘F'</span></span><br><span class="line"><span class="comment">//float num1 = 1.1; //对不对?错误</span></span><br><span class="line"><span class="keyword">float</span> num2 = <span class="number">1.1F</span>; <span class="comment">//对的</span></span><br><span class="line"><span class="keyword">double</span> num3 = <span class="number">1.1</span>; <span class="comment">//对</span></span><br><span class="line"><span class="keyword">double</span> num4 = <span class="number">1.1f</span>; <span class="comment">//对</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>浮点数使用陷阱:当我们对运算结果是小数的进行相等判断是，要小心</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//浮点数使用陷阱: 2.7  和 8.1 / 3	比较</span></span><br><span class="line"><span class="comment">//看看一段代码</span></span><br><span class="line"><span class="keyword">double</span> num11 = <span class="number">2.7</span>;</span><br><span class="line"><span class="keyword">double</span> num12 = <span class="number">8.1</span> / <span class="number">3</span>; <span class="comment">//2.7 </span></span><br><span class="line">System.out.println(num11);<span class="comment">//2.7</span></span><br><span class="line">System.out.println(num12);<span class="comment">//接近 2.7 的一个小数，而不是 2.7 (计算机不知道你小数点后面到底有多少位来进行计算)</span></span><br><span class="line"><span class="comment">//当判断这两个数是否相等的时候应该是以两个数的差值的绝对值,在某个精度范围内进行判断</span></span><br><span class="line"><span class="keyword">if</span>(Math.abs(num11 - num12) &lt; <span class="number">0.000001</span> ) {</span><br><span class="line">System.out.println(<span class="string">"差值非常小，到我的规定精度，认为相等..."</span>);</span><br><span class="line"><span class="comment">//细节:如果是直接查询得的的小数或者直接赋值，是可以判断相等</span></span><br></pre></td></tr></tbody></table></figure>
-
-<ol start="5">
-<li><h4 id="字符型的使用"><a href="#字符型的使用" class="headerlink" title="字符型的使用"></a>字符型的使用</h4></li>
-</ol>
-<p>字符类型可以表示单个字符,字符类型是 char，char 是两个字节(可以存放汉字)，多个字符用字符串 String</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> c4 = <span class="number">97</span>;<span class="comment">//字符类型可以直接存放一个数字</span></span><br><span class="line">System.out.println(c4); <span class="comment">//这里会输出97所表示的字符,也就是97所对应的Unicode码值</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>注意Sublime快捷键的使用</p>
-<p>字符类型的使用细节:</p>
-<ol>
-<li>char的本质就是一个整数,在默认输出时,输出的是nuicode码所对应的字符</li>
-<li>如果想要输出对应的数字,可以(int)字符</li>
-<li>在Java中,char类型可以直接进行运算,相当于一个整数,对应相应的UNICODE码</li>
-</ol>
-<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405155309867.png" alt="字符类型的使用细节" style="zoom: 80%;">
-
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> c5 = <span class="string">'b'</span> + <span class="number">1</span>;<span class="comment">//98+1==&gt; 99 </span></span><br><span class="line">System.out.println((<span class="keyword">int</span>)c5); <span class="comment">//99         (当输入是一个字符的时候,要想输出对应的数字需要用(int)来进行转换)</span></span><br><span class="line">System.out.println(c5); <span class="comment">//99-&gt;对应的字符-&gt;编码表 ASCII(规定好的)=&gt;c</span></span><br></pre></td></tr></tbody></table></figure>
-
-<ol start="6">
-<li><h4 id="字符类型char的本质"><a href="#字符类型char的本质" class="headerlink" title="字符类型char的本质"></a>字符类型char的本质</h4><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405164619553.png" alt="字符类型的本质" style="zoom: 50%;">
-
-<p>其中Unicode码是兼容ASCII码的</p>
-<p>UTF-8是对Unicode的改进,更好的节省了内存空间</p>
-</li>
-<li><h4 id="布尔类型-boolean"><a href="#布尔类型-boolean" class="headerlink" title="布尔类型(boolean)"></a>布尔类型(boolean)</h4><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405165807038.png" alt="布尔类型" style="zoom: 50%;">
-
-<p>注意的是:布尔类型只允许取值为true or false</p>
-</li>
-<li><h4 id="基本数据类型的转化"><a href="#基本数据类型的转化" class="headerlink" title="基本数据类型的转化"></a>基本数据类型的转化</h4><p>精度小的类型可以转换为精度大的类型,可以跨精度转换,但不能从大精度转到小精度</p>
-<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405170242183.png" alt="数据类型精度" style="zoom: 50%;">
-
-<p>自动类型转换注意的细节:</p>
-<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405171309197.png" alt="自动类型转换细节" style="zoom:50%;">
-
-<p>其中额外要注意细节3: (byte, short) 和 char 之间不能相互自动转换</p>
-<p>“byte b1 = 10” 为什么可以这么表示: 因为当把具体数赋给 byte 时，先判断该数是否在 byte 范围内，如果是就可以</p>
-<p>只要有byte，short，char 那么他们三者计算时，在计算时首先转换为 int 类型</p>
-</li>
-</ol>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//细节 1： 有多种类型的数据混合运算时，</span></span><br><span class="line"><span class="comment">//系统首先自动将所有数据转换成容量最大的那种数据类型，然后再进行计算</span></span><br><span class="line"><span class="keyword">int</span> n1 = <span class="number">10</span>; <span class="comment">//ok</span></span><br><span class="line"><span class="keyword">float</span> d1 = n1 + <span class="number">1.1</span>; <span class="comment">//错误 n1 + 1.1 =&gt; 结果类型是 double   (由于1.1是double类型)</span></span><br><span class="line"><span class="keyword">double</span> d1 = n1 + <span class="number">1.1</span>;<span class="comment">//对 n1 + 1.1 =&gt; 结果类型是 double     (解决办法1)</span></span><br><span class="line"><span class="keyword">float</span> d1 = n1 + <span class="number">1.1F</span>;<span class="comment">//对 n1 + 1.1 =&gt; 结果类型是 float      (解决办法2)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//细节 2:  当我们把精度(容量)大 的数据类型赋值给精度(容量)小 的数据类型时，</span></span><br><span class="line"><span class="comment">//就会报错，反之就会进行自动类型转换。</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="keyword">int</span> n2 = <span class="number">1.1</span>;<span class="comment">//错误 double -&gt; int</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//细节 3: (byte, short) 和 char 之间不会相互自动转换</span></span><br><span class="line"><span class="comment">//当把具体数赋给 byte 时，(1)先判断该数是否在 byte 范围内，如果是就可以</span></span><br><span class="line"><span class="keyword">byte</span> b1 = <span class="number">10</span>; <span class="comment">//对	, -128-127</span></span><br><span class="line"><span class="keyword">int</span> n2 = <span class="number">1</span>; <span class="comment">//n2 是 int</span></span><br><span class="line"><span class="keyword">byte</span> b2 = n2; <span class="comment">//错误，原因： 如果是变量赋值，判断类型</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="keyword">char</span> c1 = b1; <span class="comment">//错误， 原因 byte 不能自动转成 char</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//细节 4: byte，short，char	他们三者可以计算，在计算时首先转换为 int 类型(编译器事先规定好的)</span></span><br><span class="line"><span class="keyword">byte</span> b2 = <span class="number">1</span>; </span><br><span class="line"><span class="keyword">byte</span> b3 = <span class="number">2</span>; </span><br><span class="line"><span class="keyword">short</span> s1 = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">short</span> s2 = b2 + s1;<span class="comment">//错, b2 + s1 =&gt; int</span></span><br><span class="line"><span class="keyword">int</span> s2 = b2 + s1;<span class="comment">//对, b2 + s1 =&gt; int</span></span><br><span class="line"><span class="keyword">byte</span> b4 = b2 + b3; <span class="comment">//错误: b2 + b3 =&gt; int</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//boolean 不参与转换</span></span><br><span class="line"><span class="keyword">boolean</span> pass = <span class="keyword">true</span>;</span><br><span class="line"><span class="keyword">int</span> num100 = pass;<span class="comment">// 错x   boolean  不参与类型的自动转换</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//自动提升原则： 表达式结果的类型自动提升为 操作数中最大的类型</span></span><br><span class="line"><span class="comment">//看一道题</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">byte</span> b4 = <span class="number">1</span>; <span class="keyword">short</span> s3 = <span class="number">100</span>; <span class="keyword">int</span> num200 = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">float</span> num300 = <span class="number">1.1F</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">double</span> num500 = b4 + s3 + num200 + num300; <span class="comment">//float -&gt; double</span></span><br></pre></td></tr></tbody></table></figure>
-
-<ol start="9">
-<li><h4 id="基本数据类型的强制转换"><a href="#基本数据类型的强制转换" class="headerlink" title="基本数据类型的强制转换"></a>基本数据类型的强制转换</h4><p>自动类型转换的逆过程，<strong>将容量大的数据类型转换为容量小的数据类型</strong>。使用时要加上强制转换符 ( )，但可能造成<strong>精度降低或溢出</strong>,格外要注意。</p>
-</li>
-</ol>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> j = <span class="number">1000</span>;</span><br><span class="line"><span class="keyword">byte</span> i = (<span class="keyword">byte</span>)j;</span><br><span class="line">System.out.println(<span class="string">"i="</span> + i);     <span class="comment">//输出结果为i=-24,溢出了byte能表示的最大范围</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>强制类型转换细节说明:</p>
-<p>这个位置要注意char类型的输出到底是什么,char c3 = 100,的输出结果实际上是100所对应的ASCII码值</p>
-<p><strong>同时要注意char + char得到的是int类型的char所对应的ASCII码值的和</strong></p>
-<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405174923770.png" alt="强制类型转换细节" style="zoom: 50%;">
-
-<ol start="10">
-<li><h4 id="基本数据类型与String类型的转换"><a href="#基本数据类型与String类型的转换" class="headerlink" title="基本数据类型与String类型的转换"></a>基本数据类型与String类型的转换</h4><p>使用基本数据类型对应的包装类的相应方法得到基本数据类型,具体使用方法如下:</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> num1 = Integer.parseInt(s5);</span><br><span class="line"><span class="keyword">double</span> num2 = Double.parseDouble(s5); <span class="keyword">float</span> num3 = Float.parseFloat(s5);</span><br><span class="line"><span class="keyword">long</span> num4 = Long.parseLong(s5);</span><br><span class="line"><span class="keyword">byte</span> num5 = Byte.parseByte(s5);</span><br><span class="line"><span class="keyword">boolean</span> b = Boolean.parseBoolean(<span class="string">"true"</span>); <span class="keyword">short</span> num6 = Short.parseShort(s5);</span><br></pre></td></tr></tbody></table></figure>
-
-<p>如何将字符串转换成字符char  ,也就是将字符串的第一个<strong>字符</strong>得到</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(s5.charAt(<span class="number">0</span>));</span><br></pre></td></tr></tbody></table></figure>
-
-<p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405180740672.png" alt="基本数据类型与String类型的转换"></p>
-<p><strong>在打印的时候要注意制表位以及换行符要写在””里面才有效</strong>😄</p>
-<p>将String类型转换为基本数据类型时要注意,形式的对应,不能将”hello”转换为整型</p>
-</li>
-</ol>
-<h3 id="7-Java-API的使用"><a href="#7-Java-API的使用" class="headerlink" title="7)Java API的使用"></a>7)Java API的使用</h3><p>中文在线文档: <a target="_blank" rel="noopener" href="https://www.matools.com/">https://www.matools.com</a></p>
-<p>举例说明如何使用ArrayList类有哪些方法:</p>
-<ul>
-<li>按: 包 –&gt;类 –&gt;方法</li>
-<li>直接索引</li>
+<h3 id="为什么引入类与对象根本原因"><a href="#为什么引入类与对象根本原因" class="headerlink" title="为什么引入类与对象根本原因"></a>为什么引入类与对象根本原因</h3><ul>
+<li>不利于数据的管理</li>
+<li>效率低</li>
+<li>java 设计者 引入 类与对象(OOP) ，根本原因就是现有的技术，不能完美的解决新的新的需求.</li>
 </ul>
-<p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220405150412731.png" alt="Java类的组织形式"></p>
+<h3 id="类与对象关系示意图"><a href="#类与对象关系示意图" class="headerlink" title="类与对象关系示意图"></a>类与对象关系示意图</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220425175419018.png" alt="类与对象关系示意图" style="zoom:67%;">
+
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220425175439445.png" alt="类与对象关系示意图" style="zoom:67%;">
+
+<h3 id="类和对象的区别和联系"><a href="#类和对象的区别和联系" class="headerlink" title="类和对象的区别和联系"></a>类和对象的区别和联系</h3><ul>
+<li>类是抽象的，概念的，代表一类事物,比如人类,猫类.., 即它是数据类型.</li>
+<li>体的，实际的，代表一个具体事物, 即 是实例.</li>
+<li>类是对象的模板，对象是类的一个个体，对应一个实例</li>
+</ul>
+<h3 id="对象在内存中存在形式"><a href="#对象在内存中存在形式" class="headerlink" title="对象在内存中存在形式"></a>对象在内存中存在形式</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220425181136141.png" alt="对象在内存中存在形式" style="zoom:67%;">
+
+<h3 id="属性-成员变量-字段"><a href="#属性-成员变量-字段" class="headerlink" title="属性/成员变量/字段"></a>属性/成员变量/字段</h3><p>基本介绍</p>
+<ul>
+<li> 从概念或叫法上看： 成员变量 = 属性 = field(字段) （成员变量是用来表示属性的) </li>
+<li> 属性是类的一个组成部分，一般是基本数据类型,也可是引用类型(对象，数组)。比如我们前面定义猫类 的 int age 就是属性</li>
+</ul>
+<p>注意事项和细节说明</p>
+<ul>
+<li><p>属性的定义语法同变量，示例：访问修饰符 属性类型    属性名;</p>
+</li>
+<li><p>访问修饰符： 控制属性的访问范围</p>
+<p>有四种访问修饰符 public, proctected, 默认, private </p>
+</li>
+<li><p>属性的定义类型可以为任意类型，包含基本类型或引用类型</p>
+</li>
+<li><p>属性如果不赋值，有默认值，<strong>规则和数组一致</strong>。具体说: int  0，short 0, byte 0, long 0, float 0.0,double 0.0，char \u0000，</p>
+</li>
+<li><p>要注意p1并不是对象,真正的对象是存储在堆里和方法区常量池里面的那些内容(而p1只是对象名或者叫做对象引用)</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//p1 是对象名(对象引用)</span></span><br><span class="line"><span class="comment">//new Person() 创建的对象空间(数据) 才是真正的对象</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="如何创建对象"><a href="#如何创建对象" class="headerlink" title="如何创建对象"></a>如何创建对象</h3><ul>
+<li><p>先声明再创建</p>
+<p>Cat cat ; //声明对象 cat cat = new Cat();  //创建</p>
+</li>
+<li><p>直接创建</p>
+<p>Cat cat = new Cat()</p>
+</li>
+</ul>
+<h3 id="如何访问属性"><a href="#如何访问属性" class="headerlink" title="如何访问属性"></a>如何访问属性</h3><ul>
+<li>对象名.属性名</li>
+</ul>
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220425184032623.png" alt="看一段代码" style="zoom:67%;">
+
+<p>在上述代码中内存的执行流程</p>
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220425184118511.png" alt="在上述代码中内存的执行流程" style="zoom:67%;">
+
+<h3 id="类和对象的内存分配机制"><a href="#类和对象的内存分配机制" class="headerlink" title="类和对象的内存分配机制"></a>类和对象的内存分配机制</h3><h4 id="Java-内存的结构分析"><a href="#Java-内存的结构分析" class="headerlink" title="Java 内存的结构分析"></a>Java 内存的结构分析</h4><ol>
+<li>栈： 一般存放基本数据类型(局部变量)</li>
+<li>堆： 存放对象(Cat cat , 数组等)</li>
+<li>方法区：常量池(常量，比如字符串)， 类加载信息</li>
+<li>示意图 [Cat (name, age, price)]</li>
+</ol>
+<h4 id="Java-创建对象的流程简单分析"><a href="#Java-创建对象的流程简单分析" class="headerlink" title="Java 创建对象的流程简单分析"></a>Java 创建对象的流程简单分析</h4><ol>
+<li>先加载 Person 类信息(属性和方法信息, 只会加载一次)</li>
+<li>在堆中分配空间, 进行默认初始化(看规则)</li>
+<li>把地址赋给 p , p 就指向对象</li>
+<li>进行指定初始化， 比如 p.name =”jack” p.age = 10</li>
+</ol>
+<h2 id="二-成员方法"><a href="#二-成员方法" class="headerlink" title="(二) 成员方法"></a>(二) 成员方法</h2><h3 id="方法简介"><a href="#方法简介" class="headerlink" title="方法简介"></a>方法简介</h3><p>在某些情况下，需要定义成员方法(简称方法)。比如人类:除了有一些属性外( 年龄，姓名..),人类还有一些行为比如:可以说话、跑步..,通过学习，还可以做算术题。这时就要用<strong>成员方法</strong>才能完成。现在要求对 Person 类完善</p>
+<p>对于人这个类来说既有属性又有方法,构成一个的类(完整的类还包括很多部分)</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1. public 表示方法是公开</span></span><br><span class="line"><span class="comment">//2. void ： 表示方法没有返回值</span></span><br><span class="line"><span class="comment">//3. speak() : speak 是方法名， () 形参列表</span></span><br><span class="line"><span class="comment">//4. {} 方法体，可以写我们要执行的代码</span></span><br><span class="line"><span class="comment">//5. System.out.println("我是一个好人");  表示我们的方法就是输出一句话</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">speak</span><span class="params">()</span> </span>{</span><br><span class="line">System.out.println(<span class="string">"我是一个好人"</span>);</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1. public 表示方法是公开的</span></span><br><span class="line"><span class="comment">//2. int :表示方法执行后，返回一个 int 值</span></span><br><span class="line"><span class="comment">//3. getSum  方法名</span></span><br><span class="line"><span class="comment">//4. (int num1, int num2) 形参列表，2 个形参，可以接收用户传入的两个数</span></span><br><span class="line"><span class="comment">//5. return res;  表示把 res 的值， 返回</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getSum</span><span class="params">(<span class="keyword">int</span> num1, <span class="keyword">int</span> num2)</span> </span>{</span><br><span class="line">    <span class="keyword">int</span> res = num1 + num2; <span class="keyword">return</span> res;}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="方法的调用机制原理"><a href="#方法的调用机制原理" class="headerlink" title="方法的调用机制原理"></a>方法的调用机制原理</h3><p>依据上面的getSum方法进行内存原理的分析</p>
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220425214529062.png" alt="方法的调用机制原理" style="zoom:67%;">
+
+<h3 id="成员方法的好处"><a href="#成员方法的好处" class="headerlink" title="成员方法的好处"></a>成员方法的好处</h3><ul>
+<li>提高代码的复用性</li>
+<li>可以将实现的细节封装起来，然后供其他用户来调用即可</li>
+</ul>
+<h3 id="成员方法的定义"><a href="#成员方法的定义" class="headerlink" title="成员方法的定义"></a>成员方法的定义</h3><p>访问修饰符 返回数据类型 方法名（形参列表..） {//方法体语句；</p>
+<p>return 返回值;</p>
+<p>}</p>
+<ul>
+<li>形参列表：表示成员方法输入 cal(int n) ， getSum(int num1, int num2)</li>
+<li>返回数据类型：表示成员方法输出, void 表示没有返回值</li>
+<li>方法主体：表示为了实现某一功能代码块</li>
+<li>return 语句不是必须的。</li>
+<li>老韩提示: 结合前面的题示意图, 来理解</li>
+</ul>
+<h3 id="注意事项和使用细节"><a href="#注意事项和使用细节" class="headerlink" title="注意事项和使用细节"></a>注意事项和使用细节</h3><ol>
+<li><p>访问修饰符 (作用是控制 方法使用的范围)</p>
+<p>如果不写默认访问，[有四种: public, protected, 默认, private], 具体在后面说</p>
+</li>
+<li><p>返回数据类型</p>
+<ol>
+<li><p>一个方法最多有一个返回值 [思考，如何返回多个结果 返回数组 ]</p>
+</li>
+<li><p>返回类型可以为任意类型，包含基本类型或引用类型(数组，对象)</p>
+</li>
+<li><p>如果方法要求有返回数据类型，则方法体中最后的执行语句必须为 return 值; 而且要求返回值类型必须和 return 的值类型一致或兼容</p>
+</li>
+<li><p>如果方法是 void，则方法体中可以没有 return 语句，或者 只写 return ;</p>
+</li>
+<li><p>方法名 遵循驼峰命名法，最好见名知义，表达出该功能的意思即可, 比如 得到两个数的和 getSum, 开发中按照规范</p>
+</li>
+</ol>
+</li>
+</ol>
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220425222452662.png" alt="使用细节和规范" style="zoom:67%;">
+
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220425223557911.png" alt="方法调用细节" style="zoom:67%;">
+
+<p>写方法的时候按照以下思路进行</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//思路</span></span><br><span class="line"><span class="comment">//1. 方法的返回类型 boolean</span></span><br><span class="line"><span class="comment">//2. 方法的名字 isOdd</span></span><br><span class="line"><span class="comment">//3. 方法的形参 (int num)</span></span><br><span class="line"><span class="comment">//4. 方法体 , 判断</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="三-成员方法传参机制"><a href="#三-成员方法传参机制" class="headerlink" title="(三) 成员方法传参机制"></a>(三) 成员方法传参机制</h2><h3 id="基本数据类型的传参机制"><a href="#基本数据类型的传参机制" class="headerlink" title="基本数据类型的传参机制"></a>基本数据类型的传参机制</h3><p>其中要注意的是调用方法会产生新栈,同时对于基本数据类型,形参的任何改变都不会影响到实参</p>
+<p><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220426090521693.png" alt="成员方法传参机制内存表示"></p>
+<h3 id="引用数据类型的传参机制"><a href="#引用数据类型的传参机制" class="headerlink" title="引用数据类型的传参机制"></a>引用数据类型的传参机制</h3><p>要注意引用类型的传递传递的是栈中存储的地址值,如果在方法中对引用的数据 z进行修改那么在main栈中输出遍历得到的结果会随之改变</p>
+<p>引用类型传递的是地址（传递也是值，但是值是地址），可以通过形参影响实参！</p>
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220426091638064.png" alt="引用数据类型的传参机制(数组)" style="zoom: 50%;">
+
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220426093028870.png" alt="引用数据类型的传参机制(传递对象)" style="zoom: 80%;">
+
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220426093553639.png" alt="引用数据类型的传参机制(其中一个指向null)" style="zoom: 50%;">
+
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220426094305084.png" alt="引用数据类型的传参机制(重新开辟了新的空间)" style="zoom:50%;">
+
+<h3 id="对克隆对象的一个分析"><a href="#对克隆对象的一个分析" class="headerlink" title="对克隆对象的一个分析"></a>对克隆对象的一个分析</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220426101046369.png" alt="对克隆对象的一个分析" style="zoom:50%;">
+
+<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><p>递归调用开辟新栈,当不满足递归条件后一层一层的栈进行返回(符合栈后进先出的特性)</p>
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220426171114305.png" alt="递归调用的内存分析" style="zoom: 50%;">
+
+<h4 id="阶乘用递归实现的流程"><a href="#阶乘用递归实现的流程" class="headerlink" title="阶乘用递归实现的流程"></a>阶乘用递归实现的流程</h4><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220426175313028.png" alt="阶乘用递归实现的流程" style="zoom:50%;">
+
+<h4 id="递归重要规则"><a href="#递归重要规则" class="headerlink" title="递归重要规则"></a>递归重要规则</h4><ul>
+<li>执行一个方法时,就创建一个新的受保护的独立空间(栈空间)</li>
+<li>方法的局部变量是独立的,不会相互影响,比如n变量</li>
+<li>如果方法中使用的是引用类型变量(比如数组,对象),就会共享该引用的数据类型</li>
+<li>当一个方法执行完毕,或者遇到回报,就会返回,遵守谁调用,就将结果返回给谁,同时当方法执行完毕或者返回时,该方法也就执行完毕</li>
+<li>递归必须向退出递归的条件逼近,否则就是无限递归,现StackOverflowError,死龟了)</li>
+<li>递归自己的理解其实就是将需需要执行递归的数从后往前的放入栈中当满足一定条件后,依次从前往后进行递归输出,退出栈</li>
+</ul>
+<p>斐波那契数列用递归实现:</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> plus(n - <span class="number">1</span>) + plus(n - <span class="number">2</span>); <span class="comment">//核心部分</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>关于迷宫最短路径的问题学过算法之后继续过来补充(暂时使用递归的方法进行找路,如何求最短路径暂时不会)</p>
+<p>汉诺塔问题最核心的思想其实就是要将整个塔分为最下面一个和上面整体的两个部分,然后进行一层一层的递归</p>
+<h2 id="四-overload"><a href="#四-overload" class="headerlink" title="(四) overload"></a>(四) overload</h2><h3 id="方法重载基本介绍"><a href="#方法重载基本介绍" class="headerlink" title="方法重载基本介绍"></a>方法重载基本介绍</h3><p>java 中允许同一个类中，多个同名方法的存在，但要求<strong>形参列表</strong>不一致！ 比如：System.out.println(); out 是 PrintStream 类型</p>
+<h3 id="重载的好处"><a href="#重载的好处" class="headerlink" title="重载的好处"></a>重载的好处</h3><ol>
+<li>减轻了起名的麻烦</li>
+<li>减轻了记名的麻烦</li>
+</ol>
+<h3 id="注意事项和使用细节-1"><a href="#注意事项和使用细节-1" class="headerlink" title="注意事项和使用细节"></a>注意事项和使用细节</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220427151711171.png" alt="注意事项和使用细节" style="zoom:67%;">
+
+<p>返回值类型和参数名对重载没有作用</p>
+<p>同时要注意是否重载只会看方法名和参数列表的类型,而至于参数列表的类型是否可以进行自动转换不去关心</p>
+<h2 id="五-可变参数"><a href="#五-可变参数" class="headerlink" title="(五) 可变参数"></a>(五) 可变参数</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>java 允许将同一个类中多个同名同功能但参数个数不同的方法，封装成一个方法。就可以通过可变参数实现</p>
+<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">访问修饰符 返回类型 方法名(数据类型...  形参名) {</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span>... nums)</span> <span class="comment">//解读</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li> int… 表示接受的是可变参数，类型是 int ,即可以接收多个 int**(0-多)**</li>
+<li> 使用可变参数时，可以当做数组来使用 即 nums 可以当做数组 ,想知道长度’nums.length’</li>
+<li> 遍历 nums 即可求和</li>
+</ul>
+<h3 id="注意事项和使用细节-2"><a href="#注意事项和使用细节-2" class="headerlink" title="注意事项和使用细节"></a>注意事项和使用细节</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220427154821962.png" alt="注意事项和使用细节" style="zoom:67%;">
+
+<h2 id="六-作用域"><a href="#六-作用域" class="headerlink" title="(六) 作用域"></a>(六) 作用域</h2><h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220427170946335.png" alt="作用域的基本使用" style="zoom:67%;">
+
+<h3 id="注意事项和细节使用"><a href="#注意事项和细节使用" class="headerlink" title="注意事项和细节使用"></a>注意事项和细节使用</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220427171955212.png" alt="注意事项和细节使用" style="zoom:67%;">
+
+<p>​                                              <img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220427171943486.png" alt="注意事项和细节使用" style="zoom:67%;">    </p>
+<h2 id="七-构造器"><a href="#七-构造器" class="headerlink" title="(七) 构造器"></a>(七) 构造器</h2><h3 id="基本语法-1"><a href="#基本语法-1" class="headerlink" title="基本语法"></a>基本语法</h3><p>为什么有构造器:其目的就是在构造对象的时候就对属性进行初始化</p>
+<p>[修饰符] 方法名(形参列表){ 方法体;</p>
+<p>}</p>
+<ul>
+<li>构造器的修饰符可以默认， 也可以是 public protected private</li>
+<li>构造器没有返回值</li>
+<li>方法名 和类名字必须一样</li>
+<li>参数列表 和 成员方法一样的规则</li>
+<li>构造器的调用, 由系统完成</li>
+</ul>
+<p>构造方法又叫构造器(constructor)，是类的一种特殊的<strong>方法</strong>，本身还是一种方法, 它的主要作用是完成对新对象的初始化。它有几个特点：</p>
+<ul>
+<li>方法名和类名相同</li>
+<li>没有返回值</li>
+<li>在创建对象时，系统会自动的调用该类的构造器完成对象属性的初始化。</li>
+</ul>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//当我们 new 一个对象时，直接通过构造器指定名字和年龄(属性)</span></span><br><span class="line">Person p1 = <span class="keyword">new</span> Person(<span class="string">"smith"</span>, <span class="number">80</span>); </span><br><span class="line"><span class="comment">//在创建人类的对象时，就直接指定这个对象的年龄和姓名</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>{</span><br><span class="line">String name; <span class="keyword">int</span> age;</span><br><span class="line"><span class="comment">//构造器</span></span><br><span class="line"><span class="comment">//老韩解读</span></span><br><span class="line"><span class="comment">//1. 构造器没有返回值, 也不能写 void</span></span><br><span class="line"><span class="comment">//2. 构造器的名称和类 Person 一样</span></span><br><span class="line"><span class="comment">//3. (String pName, int pAge) 是构造器形参列表，规则和成员方法一样</span></span><br><span class="line"><span class="function"><span class="keyword">public</span>	<span class="title">Person</span><span class="params">(String pName, <span class="keyword">int</span> pAge)</span> </span>{</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="注意事项和使用细节-3"><a href="#注意事项和使用细节-3" class="headerlink" title="注意事项和使用细节"></a>注意事项和使用细节</h3><p>构造器在new完新对象后已经有空间, 所以构造器只完成对象的初始化而不是创建对象</p>
+<p>不允许主动调用”p1. xx”</p>
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220428092511885.png" alt="注意事项和使用细节" style="zoom:67%;">
+
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220428093328681.png" alt="注意事项和使用细节" style="zoom:67%;">
+
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220428093044817.png" alt="javap" style="zoom:67%;">
+
+<h2 id="八-对象创建的流程分析"><a href="#八-对象创建的流程分析" class="headerlink" title="(八) 对象创建的流程分析"></a>(八) 对象创建的流程分析</h2><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220428114355404.png" alt="对象创建的流程分析" style="zoom: 50%;">
+
+<p>文字版对象创建的流程分析:</p>
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220428114656721.png" style="zoom:50%;">
+
+<h2 id="八-this"><a href="#八-this" class="headerlink" title="(八) this"></a>(八) this</h2><h3 id="this-关键字的引出"><a href="#this-关键字的引出" class="headerlink" title="this 关键字的引出"></a>this 关键字的引出</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220428140413039.png" alt="this 关键字的引出" style="zoom: 67%;">
+
+<p>可以认为每一个对象创建完之后都隐藏了一个this属性,指向当前对象(地址相同)</p>
+<p>可以使用hashCode()进行验证</p>
+<img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220428142422284.png" alt="内存分析" style="zoom:67%;">
+
+<h3 id="this小结"><a href="#this小结" class="headerlink" title="this小结:"></a>this小结:</h3><p><strong>简单地说,哪个对象调用this,this就代表哪个对象</strong></p>
+<h3 id="this-的注意事项和使用细节"><a href="#this-的注意事项和使用细节" class="headerlink" title="this 的注意事项和使用细节"></a>this 的注意事项和使用细节</h3><ol>
+<li>this 关键字可以用来访问本类的属性、方法、构造器</li>
+<li>this 用于区分当前类的属性和局部变量</li>
+<li>访问成员方法的语法：this.方法名(参数列表);</li>
+<li>访问构造器语法：this(参数列表); 注意只能在构造器中使用(<strong>即只能在构造器中访问另外一个构造器, 必须放在第一条语句</strong>)</li>
+<li>this 不能在类定义的外部使用，只能在类定义的方法中使用。是与类关联的</li>
+</ol>
+<h3 id="编程细节"><a href="#编程细节" class="headerlink" title="编程细节:"></a>编程细节:</h3><p>当返回的值没有具体的结果时可以考虑使用return null,但是由于null不能赋值给double, 所以使用Double包装类</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Double <span class="title">division</span><span class="params">()</span></span>{<span class="comment">//如果返回值为空则必须将double定义为Double的包装类</span></span><br><span class="line"><span class="keyword">if</span> (n2 != <span class="number">0</span>) {</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">this</span>.n1 / <span class="keyword">this</span>.n2;</span><br><span class="line">}<span class="keyword">else</span> {</span><br><span class="line">	System.out.println(<span class="string">"除数不能为0"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="一道代码分析题"><a href="#一道代码分析题" class="headerlink" title="一道代码分析题"></a>一道代码分析题</h3><img src="http://hexo-zzyblog.oss-cn-beijing.aliyuncs.com/img/image-20220429100350751.png" alt="代码分析题" style="zoom: 50%;">
 
                 
             </div>
@@ -638,7 +742,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://charmgod.github.io/2022/04/05/java-xue-xi-ri-ji-day2-shu-ju-lei-xing/">https://charmgod.github.io/2022/04/05/java-xue-xi-ri-ji-day2-shu-ju-lei-xing/</a>
+                    <a href="https://charmgod.github.io/2022/04/29/java-xue-xi-ri-ji-day06-mian-xiang-dui-xiang-chu-ji/">https://charmgod.github.io/2022/04/29/java-xue-xi-ri-ji-day06-mian-xiang-dui-xiang-chu-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -869,17 +973,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/04/13/java-xue-xi-ri-ji-day03-yun-suan-fu-yu-jin-zhi/">
+                <a href="/2022/04/29/java-xue-xi-ri-ji-day06-mian-xiang-dui-xiang-chu-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Java学习日记Day03">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Java学习日记Day06面向对象初级">
                         
-                        <span class="card-title">Java学习日记Day03</span>
+                        <span class="card-title">Java学习日记Day06面向对象初级</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -889,9 +994,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-13
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -900,6 +1005,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -918,13 +1024,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/03/a-li-yun-zhi-typora-tu-chuang/">
+                <a href="/2022/04/27/han-nuo-ta/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="阿里云之Typora图床">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="汉诺塔">
                         
-                        <span class="card-title">阿里云之Typora图床</span>
+                        <span class="card-title">汉诺塔</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -935,7 +1041,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-27
                             </span>
                         <span class="publish-author">
                             
@@ -948,8 +1054,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
